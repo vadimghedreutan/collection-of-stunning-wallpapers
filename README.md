@@ -1,4 +1,4 @@
-# **Mobile Favorites Wallpapers - Next.js with Tailwindcss and Supabase**
+# **A Collection of Stunning Wallpapers - Next.js with Tailwindcss and Supabase**
 
 Offers a wide range of high-quality phone wallpapers that are designed to add a touch of style and personality to your device. With our extensive collection of unique and visually appealing wallpapers, you can easily customize your phone screen to reflect your personal taste and preferences.
 
