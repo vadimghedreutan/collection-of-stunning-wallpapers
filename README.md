@@ -20,7 +20,7 @@ To run this project locally, follow these steps:
 -   Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/vadimghedreutan/mobile-favorite-wallpapers.git
+git clone https://github.com/vadimghedreutan/collection-of-stunning-wallpapers.git
 ```
 
 -   Change into the project directory:
