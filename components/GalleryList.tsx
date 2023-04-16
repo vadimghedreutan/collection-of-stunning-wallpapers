@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { useState } from "react"
 import clsx from "clsx"
+import { saveAs } from "file-saver"
 
 const images = {
 	hidden: { y: 20, opacity: 0 },
@@ -18,8 +19,18 @@ interface Props {
 
 export default function GalleryList({ item }: Props) {
 	const [isLoading, setLoading] = useState(true)
+
+	const handleClick = () => {
+		let url = `${item.image}`
+		saveAs(url, "wallpapers")
+	}
+
 	return (
-		<motion.a href="#" className="group" variants={images}>
+		<motion.div
+			onClick={handleClick}
+			className="group cursor-pointer"
+			variants={images}
+		>
 			<div className="relative w-full aspect-[9/16] overflow-hidden rounded-lg">
 				<Image
 					src={item.image}
@@ -36,6 +47,6 @@ export default function GalleryList({ item }: Props) {
 					onLoadingComplete={() => setLoading(false)}
 				/>
 			</div>
-		</motion.a>
+		</motion.div>
 	)
 }
